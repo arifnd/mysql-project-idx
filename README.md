@@ -47,6 +47,16 @@ If you want to force start the server, you can use the `--force` option:
 ./mysql/start.sh --force
 ```
 
+#### Login to MySQL Server
+
+To login to MySQL server, run the following command:
+
+```bash
+mysql -S mysql/data/mysql.sock -u root -p
+```
+
+>password 123456
+
 #### Stopping MySQL Server
 
 To stop the MySQL server, run the following command:
