@@ -4,15 +4,15 @@ This repository contains scripts for managing MySQL server instances on Project 
 
 ## Getting Started
 
-To use these scripts, follow the instructions below:
+To use these scripts, see the [video](https://youtu.be/_uH8aiNE4gg) or follow the instructions below:
 
 ### Prerequisites
 
 Before using these scripts, ensure you have the following installed:
 
-- **MySQL Server**: Make sure MySQL server is installed on your system.
+- **MySQL Server**: Make sure MySQL server is installed on your workspace.
 
-- **Git**: Install Git on your system to clone this repository.
+- **Git**: Install Git on your workspace to clone this repository.
 
 ### Installation
 
@@ -45,6 +45,20 @@ If you want to force start the server, you can use the `--force` option:
 
 ```bash
 ./mysql/start.sh --force
+```
+
+If you want to start the server in the background, use the -d option:
+
+```bash
+./mysql/start.sh -d
+```
+
+#### Get MySQL Server Status
+
+To get the MySQL server status, run the following command:
+
+```bash
+./mysql/status.sh
 ```
 
 #### Login to MySQL Server
