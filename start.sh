@@ -68,7 +68,11 @@ then
     echo "MySQL server is already running"
 else
     echo "Starting MySQL server..."
-    $MYSQLD_CMD
+    if [[ "$1" == "-d" ]]; then
+        $MYSQLD_CMD &
+    else
+        $MYSQLD_CMD
+    fi
     exit_status=$?
     if [ $exit_status -eq 1 ]; then
         echo "Failed to start MySQL server with exit status $exit_status."
