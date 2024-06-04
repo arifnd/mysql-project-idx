@@ -2,6 +2,24 @@
 
 This repository contains scripts for managing MySQL server instances on Project IDX workspaces. The provided scripts allow you to start and stop MySQL server easily.
 
+> [!NOTE]
+> If run MariaDB is enough for You. Add `services.mysql` below your packages.
+> ```
+>   packages = [
+>     ...
+>   ];
+> 
+>   # See: https://nixos.wiki/wiki/Mysql
+>   services.mysql = {
+>     enable = true;
+>     package = pkgs.mariadb;
+>   };
+> 
+>   # Sets environment variables in the workspace
+>   env = {};
+> ```
+> Thank for the insight through this [video](https://www.youtube.com/live/tfqAbPXuH-8?feature=shared&t=1107).
+
 ## Getting Started
 
 To use these scripts, see the [video](https://youtu.be/_uH8aiNE4gg) or follow the instructions below:
