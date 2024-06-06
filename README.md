@@ -103,10 +103,6 @@ To stop the MySQL server, run the following command:
 
 >Running the command above will delete your MySQL data.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions, improvements, or encounter any issues, please open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
