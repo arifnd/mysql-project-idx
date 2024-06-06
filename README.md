@@ -3,7 +3,10 @@
 This repository contains scripts for managing MySQL server instances on Project IDX workspaces. The provided scripts allow you to start and stop MySQL server easily.
 
 > [!NOTE]
-> If run MariaDB is enough for You. Add `services.mysql` below your packages.
+> ~~If run MariaDB is enough for You. Add `services.mysql` below your packages.~~
+>
+> __Update 6 June 2024__. Now you can run MySQL or MariaDB as service on Project IDX.
+> 
 > ```
 >   packages = [
 >     ...
@@ -13,6 +16,7 @@ This repository contains scripts for managing MySQL server instances on Project 
 >   services.mysql = {
 >     enable = true;
 >     package = pkgs.mariadb;
+>     # package = pkgs.mysql80; # For MySQL 8.0
 >   };
 > 
 >   # Sets environment variables in the workspace
